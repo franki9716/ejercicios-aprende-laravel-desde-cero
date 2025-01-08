@@ -38,11 +38,6 @@ Route::delete('/ejercicio1', function () {
     return "DELETE OK";
 });
 
-Route::delete('/ejercicio1', function () {
-    return "DELETE OK";
-});
-
-
 Route::patch('/ejercicio1', function () {
     return "PATCH OK";
 });
