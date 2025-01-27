@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Ejercicio3Controller;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
@@ -26,6 +27,5 @@ Route::get('/ejercicio1', function () {
     return "GET OK";
 });
 
-Route::post('/ejercicio1', function () {
-    return "POST OK";
-});
+
+Route::post('/ejercicio3', [Ejercicio3Controller::class, 'store']);
